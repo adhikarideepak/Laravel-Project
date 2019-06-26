@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 24, 2019 at 06:48 PM
+-- Generation Time: Jun 26, 2019 at 06:23 PM
 -- Server version: 10.2.7-MariaDB-10.2.7+maria~xenial
 -- PHP Version: 7.2.19-1+ubuntu16.04.1+deb.sury.org+1
 
@@ -79,7 +79,10 @@ INSERT INTO `activity_log` (`id`, `log_name`, `description`, `subject_id`, `subj
 (4, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"test@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"test@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-24 06:14:22', '2019-06-24 06:14:22'),
 (5, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"test@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"test@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-24 06:22:46', '2019-06-24 06:22:46'),
 (6, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-24 06:26:26', '2019-06-24 06:26:26'),
-(7, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-24 07:16:51', '2019-06-24 07:16:51');
+(7, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-24 07:16:51', '2019-06-24 07:16:51'),
+(8, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-26 06:04:57', '2019-06-26 06:04:57'),
+(9, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-26 06:23:53', '2019-06-26 06:23:53'),
+(10, 'default', 'updated', 3, 'App\\User', 3, 'App\\User', '{\"attributes\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"},\"old\":{\"name\":\"Administrator\",\"email\":\"admin@gmail.com\",\"password\":\"$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm\"}}', '2019-06-26 07:15:53', '2019-06-26 07:15:53');
 
 -- --------------------------------------------------------
 
@@ -437,7 +440,7 @@ INSERT INTO `orders` (`id`, `customer_id`, `invoice_number`, `total_amount`, `st
 CREATE TABLE `order_items` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `order_id` int(20) NOT NULL,
-  `product_id,` int(20) NOT NULL,
+  `product_id` int(20) NOT NULL,
   `quantity` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -445,10 +448,29 @@ CREATE TABLE `order_items` (
 -- Dumping data for table `order_items`
 --
 
-INSERT INTO `order_items` (`id`, `order_id`, `product_id,`, `quantity`) VALUES
-(1, 2, 2, 3),
-(2, 2, 1, 3),
-(3, 2, 1, 3);
+INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `quantity`) VALUES
+(1, 1, 1, 3),
+(2, 2, 2, 3),
+(3, 1, 3, 3),
+(4, 3, 4, 6),
+(5, 2, 5, 6),
+(6, 4, 6, 1),
+(7, 5, 7, 1),
+(8, 6, 7, 1),
+(9, 7, 4, 1),
+(10, 9, 8, 1),
+(11, 10, 9, 1),
+(12, 14, 25, 1),
+(13, 13, 16, 1),
+(14, 11, 13, 1),
+(15, 23, 34, 1),
+(16, 15, 21, 1),
+(17, 16, 22, 1),
+(18, 14, 32, 1),
+(19, 17, 12, 1),
+(20, 10, 6, 1),
+(21, 34, 46, 1),
+(22, 42, 26, 1);
 
 -- --------------------------------------------------------
 
@@ -493,7 +515,7 @@ INSERT INTO `permissions` (`id`, `ability_id`, `entity_id`, `entity_type`, `forb
 
 CREATE TABLE `products` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(40) CHARACTER SET latin1 NOT NULL,
+  `pname` varchar(40) CHARACTER SET latin1 NOT NULL,
   `price` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
   `in_stock` tinyint(4) NOT NULL DEFAULT 1,
   `timestamps` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -506,7 +528,7 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `price`, `in_stock`, `timestamps`, `remember_token`, `created_at`, `updated_at`) VALUES
+INSERT INTO `products` (`id`, `pname`, `price`, `in_stock`, `timestamps`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'itaque', '1908.25', 1, '2019-06-21 11:29:52', NULL, '2019-06-21 05:59:52', '2019-06-21 05:59:52'),
 (2, 'laudantium', '364.34', 0, '2019-06-21 11:29:52', NULL, '2019-06-21 05:59:52', '2019-06-21 05:59:52'),
 (3, 'id', '1272.2', 1, '2019-06-21 11:29:52', NULL, '2019-06-21 05:59:52', '2019-06-21 05:59:52'),
@@ -657,7 +679,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
 (1, 'vineet', 'wt_admin@webuters.com', NULL, '$2y$10$vKkAuvpURaThRe2eDLG4RuL6Q6Ltd7bGZWLUQXni/UF75pTFdMm.m', NULL, '2019-06-20 07:22:01', '2019-06-20 07:22:01'),
 (2, 'Josehef', 'wt@webuters.com', NULL, '$2y$10$vvOUyd2iQrxhvksQX3RQWOtSx49WsLruWHebNwRmAsae5rD.p.qnm', NULL, '2019-06-20 07:23:55', '2019-06-20 07:23:55'),
-(3, 'Administrator', 'admin@gmail.com', NULL, '$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm', 'thz7iUNecEZaBZA97KXNAEQ19ZbAExE40RzyRCmXpNmtxLsIqVN9YrJDKNUG', '2019-06-22 06:35:14', '2019-06-22 06:35:14'),
+(3, 'Administrator', 'admin@gmail.com', NULL, '$2y$10$K9EB6yWBANHpMJyytDeTR.PpXtLpxHz0yBbVNxMGImNXi6phKGlZm', 'chpsUgw144XZu8kAg68ZsHrspgqYddq86Wpms975zxZdJItdvFvHPQn5ZMPF', '2019-06-22 06:35:14', '2019-06-22 06:35:14'),
 (4, 'Shop-manager', 'shop@gmail.com', NULL, '$2y$10$rZ9UGJST1jBqChxPk.aoZerzFN2/6vii79pGecgwOYbPaWFA4ys.6', NULL, '2019-06-22 06:45:01', '2019-06-22 06:45:01'),
 (5, 'User-manager', 'user@gmail.com', NULL, '$2y$10$wPhmM3QSsaYjOeNSbzc7GOFuIMx5mgq7Wzp5T2U7AxwlWnLwln2.u', NULL, '2019-06-23 14:10:35', '2019-06-23 14:10:35');
 
@@ -763,7 +785,7 @@ ALTER TABLE `abilities`
 -- AUTO_INCREMENT for table `activity_log`
 --
 ALTER TABLE `activity_log`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `assigned_roles`
@@ -793,7 +815,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `permissions`

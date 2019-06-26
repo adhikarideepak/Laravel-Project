@@ -19,19 +19,19 @@ class ProductController extends Controller
         } else {
             return view('home');
         }
-        
+
     }
     public function usersList()
     {
         $user = Auth::user();
         if ($user->isAn('admin', 'shop-manager')) {
-            
-            $users = DB::table('products')->select('name', 'price', 'in_stock')->get();
-            
+
+            $users = DB::table('products')->select('pname', 'price', 'in_stock')->get();
+
             $users1 = array();
             foreach ($users as $useru) {
                 $users1[] = array(
-                    'name' => $useru->name,
+                    'pname' => $useru->pname,
                     'price' => $useru->price,
                     'in_stock' => ($useru->in_stock == 0) ? 'Out of Stock' : 'In Stock'
                 );
