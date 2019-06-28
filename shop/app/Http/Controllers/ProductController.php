@@ -21,11 +21,12 @@ class ProductController extends Controller
         }
 
     }
-    public function usersList()
+    public function productList()
     {
+        // user permission
         $user = Auth::user();
         if ($user->isAn('admin', 'shop-manager')) {
-
+            // get database value
             $users = DB::table('products')->select('pname', 'price', 'in_stock')->get();
 
             $users1 = array();

@@ -30,7 +30,7 @@ Route::get('addnewrole', 'HomeController@addnewrole')->middleware('auth');
 
 // Product_list
 Route::get('product_list', 'ProductController@index')->middleware('auth');
-Route::get('users-list', 'ProductController@usersList')->middleware('auth');
+Route::get('products-list', 'ProductController@productList')->middleware('auth');
 
 // Order_list
 Route::get('order_list', 'OrderController@index')->middleware('auth');;
